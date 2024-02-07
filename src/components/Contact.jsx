@@ -1,12 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+
 
 const Contact = () => {
   return (
     <div>
       <div className="flex items-center justify-center p-12">
         <div className="mx-auto w-full max-w-[550px]">
-          <form>
+          <form onSubmit={()=>{
+            alert("form submitted")
+          }}>
             <div className="mb-5">
               <label
                 htmlFor="name"
@@ -69,9 +71,7 @@ const Contact = () => {
             </div>
             <div>
               <button
-                onClick={() => {
-                  alert("Form submitted");
-                }}
+              
                 className=" rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
               >
                 Submit
