@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
   return (
@@ -69,6 +70,7 @@ const Contact = () => {
         <div>
           <button onClick={()=>{
             alert("Form submitted");
+           
           }}
             className=" rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
           >
