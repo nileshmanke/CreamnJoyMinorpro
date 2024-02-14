@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <div className="flex items-center justify-center p-12">
+      <div className="flex items-center justify-center p-12" style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
         <div className="mx-auto w-full max-w-[550px]">
           <form onSubmit={()=>{
             alert("form submitted")

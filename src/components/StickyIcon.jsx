@@ -17,7 +17,7 @@ const StickyIcon = () => {
     
     <div className="inner-div">
 <a href="https://twitter.com " target="_blank" rel="noopener noreferrer" >
-      <i className="fab fa-twitter"></i>
+<i className="fa-brands fab fa-x-twitter text-2xl"></i>
     </a>
   </div>
     

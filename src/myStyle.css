@@ -7,7 +7,9 @@
   .animate-opacity {
     animation: Blinking 0.5s infinite; 
   }
-  * {
-    margin: 0;
-    padding: 0;
+
+
+  .animate-opacity2 {
+    animation: Blinking 1s infinite; 
   }
+  
