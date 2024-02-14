@@ -279,13 +279,14 @@ const koolfiefun=()=>{
           </div>
         </div>
       </header>
+      
       {isMenuOpen && (
-  <div className=" overflow-hidden bg-white shadow-2xl text-black py-2" style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
+  <div className="  bg-white h-[1000px] z-30 shadow-2xl text-black py-2  " style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' , animation: 'slideRight 0.5s ease'  }}>
     <nav className="w-screen flex gap-y-3 flex-col items-center sm:hidden">
       <NavLink exact to="/" className="text-xl font-semibold  sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Home</NavLink>
       <div>
-      <div to="/product" className="text-xl font-semibold sm:text-sm hover:text-black py-1 text-black flex justify-between "  onClick={()=>setmproduct(!mproduct)} > Product <span className={` text-2xl ${mproduct ? "rotate-180" : ""}`}><RiArrowDropDownLine /></span>    </div>
-<div className={`bg-white  flex flex-col  ${mproduct ? "block" : "hidden"}`}>
+      <div to="/product" className="text-xl font-semibold sm:text-sm hover:text-black py-1 text-black flex justify-between ml-5 "  onClick={()=>setmproduct(!mproduct)} > Product <span className={` text-2xl  ${mproduct ? "rotate-180" : ""}`}><RiArrowDropDownLine /></span>    </div>
+<div style={{animation:'slideInFromTop 0.3s ease'}} className={`bg-white  flex flex-col    ${mproduct ? "block" : "hidden"}`} >
   <ul className='flex flex-col p-4 gap-y-4'>
   <div onClick={()=>{setmcup(!mcup);
   setmcone(false)
@@ -294,7 +295,7 @@ const koolfiefun=()=>{
   setmsundae(false);
   }}>    
     <li className='hover:bg-red-700 text-black  font-extrabold hover:text-white  flex  justify-between p-1'>CUPS <span className={`text-xl ${ mcup ? "rotate-180" : ""}`}><RiArrowDropDownLine /> </span> </li>
-    <div className={`p-4 ${mcup ? "block" : "hidden"}`}>
+    <div style={{animation:'slideInFromTop 0.3s ease'}} className={`p-4 ${mcup ? "block" : "hidden"}`}>
       <ul>
         <li onClick={mcupsfunction}>small cups</li>
         <li onClick={mcupsfunction}>medium cups</li>
@@ -311,7 +312,7 @@ const koolfiefun=()=>{
       setmfamily(false);
       setmsundae(false);
     }}>CONES <span className={` text-xl ${mcone ?"rotate-180" : ""}`}><RiArrowDropDownLine /> </span> </li>
-<div className={` p-4 ${mcone ? "block" : "hidden"}`}>
+<div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${mcone ? "block" : "hidden"}`}>
 <ul>
         <li onClick={mconesfunction}>small cones</li>
         <li onClick={mconesfunction}>medium cones</li>
@@ -337,7 +338,7 @@ const koolfiefun=()=>{
       setmsundae(false);
     }}>
     <li className='hover:bg-red-700 text-black hover:text-white font-bold flex justify-between p-1'>KOOLFIES  <span className={` text-xl ${mkoolfies ? "rotate-180" :""}`}><RiArrowDropDownLine /> </span></li>
-<div className={` p-4 ${mkoolfies ? "block" : "hidden"}`}>
+<div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${mkoolfies ? "block" : "hidden"}`}>
   <ul>
     <li onClick={mkoolfiesfunction}>Ice Lolly</li>
     <li onClick={mkoolfiesfunction}>Dolly</li>
@@ -356,7 +357,7 @@ const koolfiefun=()=>{
       setmsundae(false);
     }}>
     <li className='hover:bg-red-700 text-black hover:text-white font-bold flex justify-between p-1'>FAMILY PACK <span className={` text-xl ${mfamily ?"rotate-180" :""}`}><RiArrowDropDownLine /> </span> </li>
-<div className={` p-4 ${mfamily ? "block" : "hidden"}`}>
+<div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${mfamily ? "block" : "hidden"}`}>
   <ul >
     <li  className='mt-1' onClick={mfamilyfunction}>Cream Balls</li>
     <li className='mt-1' onClick={mfamilyfunction}>Choco Chips</li>
@@ -376,7 +377,7 @@ const koolfiefun=()=>{
       setmfamily(false);
     }}>
     <li className='hover:bg-red-700 text-black hover:text-white font-bold flex justify-between p-1'>SUNDAE <span className={` text-xl ${msundae ? "rotate-180" : "" }`}><RiArrowDropDownLine /> </span> </li>
-<div className={` p-4 ${msundae ? "block" : "hidden"}`}>
+<div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${msundae ? "block" : "hidden"}`}>
   <ul>
     <li  className='mt-1' onClick={msundaefunction}  >Mix Fruit</li>
     <li  className='mt-1' onClick={msundaefunction} >Mango Ripple</li>
