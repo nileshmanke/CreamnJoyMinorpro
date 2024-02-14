@@ -60,12 +60,12 @@ const Footer = () => {
             <h1 className='text-center text-xl font-bold mb-2' style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>Quick Links</h1>
             <ul className="flex-col   justify-center sm:text-center text-2xl font-bold" style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '14px' }}>
               <li className="mr-2 "><Link to="/">Home</Link></li>
-              <li className="mr-2 mt-5"><Link to="/about">About</Link></li>
-              <li className="mr-2 mt-5"><Link to="/gallery">Gallery</Link></li>
-              <li className="mr-2 mt-5"><Link to="/product">Product</Link></li>
+              <li className="mr-2 mt-1"><Link to="/about">About</Link></li>
+              <li className="mr-2 mt-1"><Link to="/gallery">Gallery</Link></li>
+              <li className="mr-2 mt-1"><Link to="/product">Product</Link></li>
              
               
-              <li className='mr-2 mt-5'><Link to="/contact">Contact</Link></li>
+              <li className='mr-2 mt-1'><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
         </div>

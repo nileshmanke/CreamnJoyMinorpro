@@ -321,8 +321,12 @@ const koolfiefun=()=>{
     </div>
 
    
-    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold p-1 '>PREMIUM CUPS</Link>
-    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold  p-1'>PREMIUM CONES</Link>
+    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold p-1 '  onClick={()=>{
+      setmproduct(false);
+    }}>PREMIUM CUPS</Link>
+    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold  p-1' onClick={()=>{
+      setmproduct(false);
+    }}>PREMIUM CONES</Link>
     <div onClick={()=>{
       setmkoolfies(!mkoolfies);
       setmcup(false);
@@ -382,7 +386,9 @@ const koolfiefun=()=>{
   </ul>
 </div>
     </div>
-    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold p-1'>CHOCOBARS</Link>
+    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold p-1' onClick={()=>{
+      setmproduct(false);
+    }}>CHOCOBARS</Link>
   </ul>
 </div>
       </div>
