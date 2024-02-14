@@ -36,16 +36,16 @@ export default function Slider() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className='w-full h-[200px] sm:h-[650px]' src="/images/banner1.gif" />
+          <img className='w-full h-[400px] sm:h-[650px]' src="/images/banner1.gif" />
         </SwiperSlide>
         <SwiperSlide>
-          <img  className='w-full h-[200px]  sm:h-[650px]' src="/images/banner2.jpg" />
+          <img  className='w-full h-[400px]  sm:h-[650px]' src="/images/banner2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img  className='w-full  h-[200px]  sm:h-[650px]' src="/images/banner3.jpg" />
+          <img  className='w-full  h-[400px]  sm:h-[650px]' src="/images/banner3.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img  className='w-full h-[200px]  sm:h-[650px]' src="/images/banner1.gif" />
+          <img  className='w-full h-[400px]  sm:h-[650px]' src="/images/banner1.gif" />
         </SwiperSlide>
       </Swiper>
     </>

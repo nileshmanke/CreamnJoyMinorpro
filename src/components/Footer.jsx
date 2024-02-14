@@ -34,7 +34,7 @@ const Footer = () => {
           
           {/* Logo Section */}
           
-          <div className='grid grid-cols-1 md:grid-cols-1 gap-3 md:gap-16 m-auto mt-4 md:justify-center p-4 '>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-16 m-auto mt-4 md:justify-center p-4 '>
   <div className='flex flex-col items-center md:items-start p-2 '>
     <img className='w-[53px] mb-2' src='/images/iso-2-1-logo-png-transparent.png' alt=''/>
     <p className='font-bold ' style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>22000:2005</p>
