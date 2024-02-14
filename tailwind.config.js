@@ -6,7 +6,7 @@ export default {
 
     screens: {
       'xs': '320px',     // Custom extra-small breakpoint
-      'sm': '1442px',     // Custom small breakpoint
+      'sm': '1040px',     // Custom small breakpoint
       'md': '768px',     // Custom medium breakpoint
       'lg': '1024px',    // Custom large breakpoint
       'xl': '1280px',    // Custom extra-large breakpoint
