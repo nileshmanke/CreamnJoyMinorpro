@@ -321,8 +321,8 @@ const koolfiefun=()=>{
     </div>
 
    
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold p-1 '>PREMIUM CUPS</li>
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold  p-1'>PREMIUM CONES</li>
+    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold p-1 '>PREMIUM CUPS</Link>
+    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold  p-1'>PREMIUM CONES</Link>
     <div onClick={()=>{
       setmkoolfies(!mkoolfies);
       setmcup(false);
@@ -382,7 +382,7 @@ const koolfiefun=()=>{
   </ul>
 </div>
     </div>
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold p-1'>CHOCOBARS</li>
+    <Link to="/product" className='hover:bg-red-700 text-black hover:text-white font-bold p-1'>CHOCOBARS</Link>
   </ul>
 </div>
       </div>
