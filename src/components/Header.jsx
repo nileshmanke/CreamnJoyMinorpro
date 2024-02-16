@@ -158,7 +158,6 @@ const koolfiefun=()=>{
 
                 </NavLink>
 
-<button className='mt-4  sm:hidden absolute right-[30px] top-8'><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>  
 
 
           </div>
@@ -411,6 +410,8 @@ const koolfiefun=()=>{
       <NavLink to="/about" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>About</NavLink>
       <NavLink to="/gallery" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Gallery</NavLink>
       <NavLink to="/contact" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Contact</NavLink>
+      <button className='mt-4 '><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>  
+
     </nav>
   </div>
 )}
