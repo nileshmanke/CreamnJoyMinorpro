@@ -147,25 +147,31 @@ const koolfiefun=()=>{
 
   return (
     <div>
-      <header className='w-full bg-white text-black text-opacity-100 ' style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
-        <div className="container">
+      <header className='w-full bg-[#4b6584] text-black text-opacity-100 ' style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
+        <div className="container ">
           
-          <div className="flex  items-center justify-around  sm:text-2xl">
-          <div >
-            <NavLink exact to="/" >            <img className='w-[150px] animate-pulse' src='/images/CREAM N JOY LOGO PHOTO COPY (1).png' alt=''/>
-</NavLink>
+          <div className="flex  ml-[100px] sm:ml-0 sm:items-center justify-around  sm:flex-row   sm:text-2xl">
+          <div  className='flex  '>
+
+            <NavLink exact to="/" >  
+                      <img className='w-[120px]  p-1' src='/images/logo.png' alt=''/>
+
+                </NavLink>
+
+<button className='mt-4  sm:hidden absolute right-[30px] top-8'><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>  
+
 
           </div>
             {!isMenuOpen && ( /* Render this only if menu is not open */
               <div className=" hidden    sm:flex justify-around gap-6 relative"> {/* Adjusted */}
-                <NavLink exact to="/" className="text-sm sm:text-2xl hover:text-black font-bold " activeClassName="active">Home</NavLink>
+                <NavLink exact to="/" className="text-sm sm:text-2xl text-white font-bold " activeClassName="active">Home</NavLink>
                     <div className='relative'>
-                    <div className="text-sm sm:text-2xl font-bold hover:text-black flex cursor-pointer "onClick={()=>{setdrop(!drop)
+                    <div className="text-sm sm:text-2xl font-bold text-white   flex cursor-pointer "onClick={()=>{setdrop(!drop)
                     setsundae(false)
                     setcupsdrop(false);
                     setconedrop(false)
                     setfamily(false)
-                    setkoolfie(false)}}  activeClassName="active">Product <span className={`mt-1 ${drop ? "rotate-180" : ""} text-3xl`}><RiArrowDropDownLine /></span></div>
+                    setkoolfie(false)}}  activeClassName="active">Product <span className={`mt-1 ${drop ? "rotate-180" : ""} text-3xl text-white`}><RiArrowDropDownLine /></span></div>
 <div className={`absolute ${drop ? "block" :"hidden"} box top-[50px] bg-white  w-[250px] z-30`}>
 
 
@@ -267,19 +273,19 @@ const koolfiefun=()=>{
       </div>
 
                     </div>
-                                    <NavLink to="/about" className="text-sm sm:text-2xl hover:text-black font-bold " activeClassName="active">About</NavLink>
+                                    <NavLink to="/about" className="text-sm sm:text-2xl text-white font-bold " activeClassName="active">About</NavLink>
                 {/* <NavLink to="/services" className="text-sm sm:text-2xl hover:text-black" activeClassName="active">Services</NavLink> */}
-                <NavLink to="/gallery" className="text-sm sm:text-2xl hover:text-black font-bold " activeClassName="active">Gallery</NavLink>
-                <NavLink to="/contact" className="text-sm sm:text-2xl hover:text-black font-bold " activeClassName="active">Contact</NavLink>
-                <NavLink to="/" className="bg-green-700 text-white p-2 rounded-lg animate-opacity2">Order Now</NavLink>
+                <NavLink to="/gallery" className="text-sm sm:text-2xl text-white font-bold " activeClassName="active">Gallery</NavLink>
+                <NavLink to="/contact" className="text-sm sm:text-2xl text-white font-bold " activeClassName="active">Contact</NavLink>
+                <NavLink to="/" className="bg-red-700 text-white p-2 rounded-lg animate-opacity2">Order Now</NavLink>
 
               </div>
             )}
             <div className="sm:hidden">
               {isMenuOpen ? (
-                <FaTimes className="text-black text-2xl cursor-pointer absolute right-3" onClick={toggleMenu} />
+                <FaTimes className="text-white text-2xl cursor-pointer absolute left-3 top-[50px]" onClick={toggleMenu} />
               ) : (
-                <FaBars className="text-black text-2xl cursor-pointer absolute right-3 " onClick={toggleMenu} />
+                <FaBars className="text-white text-2xl cursor-pointer absolute left-3  top-[50px]" onClick={toggleMenu} />
               )}
             </div>
           </div>
@@ -287,12 +293,12 @@ const koolfiefun=()=>{
       </header>
       
       {isMenuOpen && (
-  <div className="  bg-white h-[1200px] z-30 shadow-2xl text-black py-2  " style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' , animation: 'slideRight 0.5s ease'  }}>
+  <div className="  bg-[#4b6584] h-[1200px] z-30 shadow-2xl text-white py-2 " style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' , animation: 'slideRight 0.5s ease'  }}>
     <nav className="w-screen flex gap-y-3 flex-col items-center sm:hidden">
       <NavLink exact to="/" className="text-2xl font-semibold  sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Home</NavLink>
       <div>
-      <div to="/product" className="text-2xl font-semibold sm:text-sm hover:text-black py-1 text-black flex justify-between ml-5 "  onClick={()=>setmproduct(!mproduct)} > Product <span className={` text-2xl mt-1  ${mproduct ? "rotate-180" : ""}`}><RiArrowDropDownLine /></span>    </div>
-<div style={{animation:'slideInFromTop 0.3s ease'}} className={`bg-white  flex flex-col    ${mproduct ? "block" : "hidden"}`} >
+      <div to="/product" className="text-2xl font-semibold sm:text-sm  py-1 text-white flex justify-between ml-5 "  onClick={()=>setmproduct(!mproduct)} > Product <span className={` text-2xl mt-1  ${mproduct ? "rotate-180" : ""}`}><RiArrowDropDownLine /></span>    </div>
+<div style={{animation:'slideInFromTop 0.3s ease'}} className={`bg-[#4b6584]  flex flex-col    ${mproduct ? "block" : "hidden"}`} >
   <ul className='flex flex-col p-4 gap-y-4'>
   <div onClick={()=>{setmcup(!mcup);
   setmcone(false)
@@ -300,7 +306,7 @@ const koolfiefun=()=>{
   setmfamily(false);
   setmsundae(false);
   }}>    
-    <li className='hover:bg-red-700 text-black  font-extrabold text-xl font-mono hover:text-white  flex  justify-between p-1'>CUPS <span className={`text-xl ${ mcup ? "rotate-180" : ""}`}><RiArrowDropDownLine /> </span> </li>
+    <li className='hover:bg-red-700 text-white  font-extrabold text-xl  hover:text-white  flex  justify-between p-1'>CUPS <span className={`text-xl ${ mcup ? "rotate-180" : ""}`}><RiArrowDropDownLine /> </span> </li>
     <div style={{animation:'slideInFromTop 0.3s ease'}} className={`p-4 ${mcup ? "block" : "hidden"}`}>
       <ul>
         <li onClick={mcupsfunction} className='flex  mt-5 gap-x-2'>  <span className='mt-1'><FaChevronRight /></span>small cups</li>
@@ -311,7 +317,7 @@ const koolfiefun=()=>{
 </div>
     
     <div>
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold  text-xl font-mono flex justify-between p-1' onClick={()=>{
+    <li className='hover:bg-red-700 text-white hover:text-white font-bold  text-xl  flex justify-between p-1' onClick={()=>{
       setmcone(!mcone);
       setmcup(false);
       setmkoolfies(false);
@@ -328,11 +334,11 @@ const koolfiefun=()=>{
     </div>
 
    
-    <Link to="/product" className='hover:bg-red-700 text-black text-xl font-mono hover:text-white font-bold p-1 '  onClick={()=>{
+    <Link to="/product" className='hover:bg-red-700  text-white text-xl  hover:text-white font-bold p-1 '  onClick={()=>{
       setmproduct(false);
       setIsMenuOpen(!isMenuOpen);
     }}>PREMIUM CUPS</Link>
-    <Link to="/product" className='hover:bg-red-700 text-black text-xl font-mono hover:text-white font-bold  p-1' onClick={()=>{
+    <Link to="/product" className='hover:bg-red-700  text-white text-xl  hover:text-white font-bold  p-1' onClick={()=>{
       setmproduct(false);
       setIsMenuOpen(!isMenuOpen);
     }}>PREMIUM CONES</Link>
@@ -343,7 +349,7 @@ const koolfiefun=()=>{
       setmfamily(false);
       setmsundae(false);
     }}>
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold flex justify-between p-1 text-xl font-mono'>KOOLFIES  <span className={` text-xl ${mkoolfies ? "rotate-180" :""}`}><RiArrowDropDownLine /> </span></li>
+    <li className='hover:bg-red-700  text-white hover:text-white font-bold flex justify-between p-1 text-xl '>KOOLFIES  <span className={` text-xl ${mkoolfies ? "rotate-180" :""}`}><RiArrowDropDownLine /> </span></li>
 <div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${mkoolfies ? "block" : "hidden"}`}>
   <ul>
     <li onClick={mkoolfiesfunction} className='flex  mt-5 gap-x-2'> <span className='mt-1'><FaChevronRight /></span>Ice Lolly</li>
@@ -362,7 +368,7 @@ const koolfiefun=()=>{
       setmkoolfies(false);
       setmsundae(false);
     }}>
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold flex justify-between p-1 text-xl font-mono'>FAMILY PACK <span className={` text-xl ${mfamily ?"rotate-180" :""}`}><RiArrowDropDownLine /> </span> </li>
+    <li className='hover:bg-red-700  text-white hover:text-white font-bold flex justify-between p-1 text-xl '>FAMILY PACK <span className={` text-xl ${mfamily ?"rotate-180" :""}`}><RiArrowDropDownLine /> </span> </li>
 <div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${mfamily ? "block" : "hidden"}`}>
   <ul >
     <li  className='flex  mt-5 gap-x-2' onClick={mfamilyfunction} > <span className='mt-1'><FaChevronRight /></span>Cream Balls</li>
@@ -382,7 +388,7 @@ const koolfiefun=()=>{
       setmkoolfies(false);
       setmfamily(false);
     }}>
-    <li className='hover:bg-red-700 text-black hover:text-white font-bold flex justify-between p-1 text-xl font-mono'>SUNDAE <span className={` text-xl ${msundae ? "rotate-180" : "" }`}><RiArrowDropDownLine /> </span> </li>
+    <li className='hover:bg-red-700  text-white hover:text-white font-bold flex justify-between p-1 text-xl '>SUNDAE <span className={` text-xl ${msundae ? "rotate-180" : "" }`}><RiArrowDropDownLine /> </span> </li>
 <div style={{animation:'slideInFromTop 0.3s ease'}} className={` p-4 ${msundae ? "block" : "hidden"}`}>
   <ul>
     <li  className='flex  mt-5 gap-x-2' onClick={msundaefunction}  >  <span className='mt-1'><FaChevronRight /></span>Mix Fruit</li>
@@ -395,7 +401,7 @@ const koolfiefun=()=>{
   </ul>
 </div>
     </div>
-    <Link to="/product" className='hover:bg-red-700  text-xl font-mono text-black hover:text-white font-bold p-1' onClick={()=>{
+    <Link to="/product" className='hover:bg-red-700  text-xl   text-white hover:text-white font-bold p-1' onClick={()=>{
       setmproduct(false);
       setIsMenuOpen(!isMenuOpen);
     }}>CHOCOBARS</Link>
@@ -405,7 +411,6 @@ const koolfiefun=()=>{
       <NavLink to="/about" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>About</NavLink>
       <NavLink to="/gallery" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Gallery</NavLink>
       <NavLink to="/contact" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Contact</NavLink>
-      <button className='mt-4'><NavLink to="/" className="bg-green-700 text-xl text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>  
     </nav>
   </div>
 )}

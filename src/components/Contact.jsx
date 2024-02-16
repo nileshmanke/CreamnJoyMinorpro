@@ -4,6 +4,9 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
+
+<h1 className='text-3xl text-red-700 font-bold text-center font-mono p-5'>Contact Us</h1>
+
       <div className="flex items-center justify-center p-12" style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
         <div className="mx-auto w-full max-w-[550px]">
           <form onSubmit={()=>{

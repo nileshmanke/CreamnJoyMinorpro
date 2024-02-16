@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-black p-4  mt-3 border border-t-black border-dashed ">
+    <footer className="bg-[#4b6584] text-white p-4  mt-3 border border-t-black border-dashed ">
       
       <div className="container mx-auto">
         {/* Manufacturer Section */}
         <div className="text-center  mb-4" >
           <h1 className="text-xs sm:text-sm font-semibold">MANUFACTURED BY:</h1>
-          <h1 className="text-red-700 text-lg sm:text-3xl font-bold" >SANMATI</h1>
+          <h1 className="text-white text-lg sm:text-3xl font-bold" >SANMATI</h1>
           <h1 className="text-xs font-bold sm:font-semibold">MILK PRODUCTS</h1>
         </div>
 
 
         <div className='flex justify-center gap-8 text-3xl m-5'>
 
-<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i class="fa-brands fa-facebook"></i></div>
-<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i class="fa-brands fa-instagram"></i></div>
-<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i class="fa-brands fa-youtube"></i></div>
-<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i class="fa-brands fa-x-twitter"></i></div>
-<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i class="fa-brands fa-linkedin"></i></div>
+<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i className="fa-brands fa-facebook"></i></div>
+<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i className="fa-brands fa-instagram"></i></div>
+<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i className="fa-brands fa-youtube"></i></div>
+<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i className="fa-brands fa-x-twitter"></i></div>
+<div className='hover:translate-y-[-15px] hover:text-yellow-500 duration-1000'><i className="fa-brands fa-linkedin"></i></div>
 </div>
 
        
@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 p-2 text-center text-xs sm:text-sm w-full sm:flex justify-between sm:p-2 text-black bg-white mt-4 border border-t-black border-dashed " style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
+      <div className="grid grid-cols-1  sm:grid-cols-1 p-2 text-center text-xs sm:text-sm w-full sm:flex justify-between sm:p-2 text-white bg-[#4b6584] mt-4 border-t border-t-white border-dashed " style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>
         <div>
           <h1>Copyright © 2024 | All rights reserved</h1>
         </div>

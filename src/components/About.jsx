@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className=''>
 
-<h1 className='text-3xl font-bold text-center font-mono'>About Us</h1>
+<h1 className='text-3xl text-red-700 font-bold text-center font-mono p-5'>About Us</h1>
       <div className='p-6'>
         <p className='' style={{ fontFamily: 'Comfortaa, sans-serif', fontSize: '16px' }}>A warm welcome Form Cream & Joy Ice Cream, the multi award-winning ice cream manufacturer which - in just few years - has grown to become Maharashtra largest own label ice cream manufacturer.
 
