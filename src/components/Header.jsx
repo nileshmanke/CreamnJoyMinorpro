@@ -410,7 +410,10 @@ const koolfiefun=()=>{
       <NavLink to="/about" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>About</NavLink>
       <NavLink to="/gallery" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Gallery</NavLink>
       <NavLink to="/contact" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Contact</NavLink>
-      <button className='mt-4 '><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>  
+      <button className='mt-4 '><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Login/Resister</NavLink></button>  
+
+      <button className='mt-4 '><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>
+
 
     </nav>
   </div>
