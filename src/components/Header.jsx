@@ -276,7 +276,9 @@ const koolfiefun=()=>{
                 {/* <NavLink to="/services" className="text-sm sm:text-2xl hover:text-black" activeClassName="active">Services</NavLink> */}
                 <NavLink to="/gallery" className="text-sm sm:text-2xl text-white font-bold " activeClassName="active">Gallery</NavLink>
                 <NavLink to="/contact" className="text-sm sm:text-2xl text-white font-bold " activeClassName="active">Contact</NavLink>
-                <NavLink to="/" className="bg-red-700 text-white p-2 rounded-lg animate-opacity2">Order Now</NavLink>
+                <button className='mb-3 '><NavLink to="/" className=" text-2xl font-bold text-white p-2 rounded-lg w-[150x]  animate-opacity2">Login/Resister</NavLink></button>  
+
+                <NavLink to="/" className="bg-red-700  text-white p-2 rounded-lg animate-opacity2">Order Now</NavLink>
 
               </div>
             )}
@@ -410,7 +412,7 @@ const koolfiefun=()=>{
       <NavLink to="/about" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>About</NavLink>
       <NavLink to="/gallery" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Gallery</NavLink>
       <NavLink to="/contact" className="text-2xl font-semibold sm:text-sm hover:text-gray-300 py-1" activeClassName="active" onClick={toggleMenu}>Contact</NavLink>
-      <button className='mt-4 '><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Login/Resister</NavLink></button>  
+      <button className='mt-4 '><NavLink to="/" className=" text-2xl font-bold text-white p-2 rounded-lg w-[150x]  animate-opacity2">Login/Resister</NavLink></button>  
 
       <button className='mt-4 '><NavLink to="/" className="bg-red-700 text-lg text-white p-2 rounded-lg w-[150x]  animate-opacity2">Order Now</NavLink></button>
 
