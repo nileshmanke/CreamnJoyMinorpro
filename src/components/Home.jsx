@@ -76,9 +76,7 @@ const Home = () => {
   <img className='w-screen h-screen p-12 '  src='/images/pngegg (1).png'  alt='' />
  </div>
 
- <div className='overflow-hidden sm:hidden'>
-  <img className='w-screen  p-8 '  src='/images/pngegg (2).png'  alt='' />
- </div>
+
 
     </div>
   )
