@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from './Slider'
+import { Link } from 'react-router-dom';
 
 
 
@@ -42,21 +43,57 @@ const Home = () => {
 
       <div className='w-11/12 m-auto grid grid-cols-2 sm:grid-cols-4 gap-4 p-3'>
 <div>
-  <img className='h-[158px] sm:h-[292px]' src=' /images/homeimg1.jpeg' alt=' ' />
+
+
+  <Link to="/product"> 
+   <img className='h-[158px] sm:h-[292px]' src=' /images/homeimg1.jpeg' alt=' ' />
+</Link>
+  
 </div>
 
 <div>
-  <img className='h-[158px] sm:h-[292px]' src='/images/homeimg2.jpeg' alt='' />
+  <Link to="/product" >
+      <img className='h-[158px] sm:h-[292px]' src='/images/homeimg2.jpeg' alt='' />
+
+</Link>
 </div>
 
 <div>
-  <img className='h-[158px] sm:h-[292px]' src='/images/homeimg3.jpeg' alt='' />
+   <Link to="/product" >
+      <img className='h-[158px] sm:h-[292px]' src='/images/homeimg3.jpeg' alt='' />
+      
+</Link>
 </div>
 
 
 <div>
-  <img className='h-[158px] sm:h-[292px]' src='/images/homeimg4.jpeg' alt=''/>
+<Link to="/product" >
+      <img className='h-[158px] sm:h-[292px]' src='/images/homeimg4.jpeg' alt='' />
+      
+</Link>
 </div>
+
+<div>
+<Link to="/product" >
+      <img className='h-[158px] sm:h-[292px]' src='/images/homeimg5.jpeg' alt='' />
+      
+</Link>
+</div>
+ 
+
+<div>
+<Link to="/product" >
+      <img className='h-[158px] sm:h-[292px]' src='/images/homeimg6.jpeg' alt='' />
+      
+</Link></div>
+
+
+
+<div>
+<Link to="/product" >
+      <img className='h-[158px] sm:h-[292px]' src='/images/homeimg7.jpeg' alt='' />
+      
+</Link></div>
 
 
 
