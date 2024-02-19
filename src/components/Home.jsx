@@ -4,6 +4,13 @@ import Slider from './Slider'
 
 
 const Home = () => {
+
+
+  const imageStyle={
+
+    animation:'rotateVertical 2s infinite linear',
+
+  }
   return (
     <div>
 
@@ -72,8 +79,8 @@ const Home = () => {
         </section>
  </div>
 
- <div className='overflow-hidden sm:hidden'>
-  <img className='w-screen h-screen p-12 '  src='/images/pngegg (1).png'  alt='' />
+ <div className='overflow-hidden sm:hidden '>
+  <img className='w-screen h-screen p-12  ' style={imageStyle}  src='/images/pngegg (1).png'  alt='' />
  </div>
 
 

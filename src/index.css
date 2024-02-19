@@ -114,3 +114,18 @@ body{
     transform: rotate(360deg);
   }
 }
+
+
+.rotateanimation{
+  animation:  rotateanimation 5s infinite linear; 
+}
+
+@keyframes rotateVertical {
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+  
+}
